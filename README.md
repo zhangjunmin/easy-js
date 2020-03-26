@@ -34,5 +34,12 @@
     numbB == boolB // true 非0数可转化为true
     strB == boolB // true 非空串也可转化为true
 
+```     
+注意：用构造函数构造的和直接赋值的不会全等，其类型是object      
+```
+    const str1 = '123'
+    const str2 = new String('123')
+    typeof(str1) === 'string'
+    typeof(str2) === 'object'
 ```
 - 复杂数据类型 object
